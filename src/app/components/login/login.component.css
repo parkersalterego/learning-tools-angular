@@ -1,0 +1,51 @@
+body {
+    background-color: #69D3D6;    
+}
+
+/***Login Img***/
+.login-img {
+    /* position: absolute; */
+    padding-top: 9%;
+    max-width: 32%;
+    max-height: 32%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/***End of login img***/
+
+
+/***Inside form-input***/
+.form-input {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.input-form {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 3%
+}
+
+.login-btn {
+    margin: 0 auto;
+    color: #69D3D6;
+}
+
+
+
+.create-acc {
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    padding-top: 3%;
+    font-weight: bolder;
+}
+/***End of form-input***/
+
+
+/* @font-face {
+    font-family: Brandon Grotesque;    
+    src: url("../../assets/fonts/bg/Brandon_med.otf") format("opentype");
+    
+} */
