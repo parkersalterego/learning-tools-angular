@@ -1,0 +1,49 @@
+
+body {
+    background-color: #69D3D6;    
+    font-family: 'Brandon Grotesque', sans-serif;
+}
+
+/***Login Img***/
+.login-img {
+    /* position: absolute; */
+    padding-top: 9%;
+    max-width: 32%;
+    max-height: 32%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+/***End of login img***/
+
+
+/***Inside form-input***/
+.form-input {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.input-form {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 3%;
+    font-family: 
+    
+}
+
+.login-btn {
+    margin: 2% auto;
+    color: #69D3D6;
+}
+
+
+.create-acc {
+    margin: 0 auto;
+    color: white;
+    text-decoration: none !important;
+    padding-top: 3%;
+}
+/***End of form-input***/
+
+

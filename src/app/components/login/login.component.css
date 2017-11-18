@@ -25,11 +25,11 @@ body {
 .input-form {
     margin-top: 2%;
     margin-bottom: 2%;
-    padding: 3%
+    padding: 3%;
 }
 
 .login-btn {
-    margin: 0 auto;
+    margin: 2% auto;
     color: #69D3D6;
 }
 
