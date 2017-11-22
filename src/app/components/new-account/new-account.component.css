@@ -1,0 +1,37 @@
+body {
+    background-color: #69D3D6;  
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/***Login Img***/
+.login-img {
+    padding-top: 5%;
+    max-width: 20%;
+    max-height: 32%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/***End of login img***/
+
+.input-form {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    font-size: 25px;    
+}
+
+/**Create account button**/
+.acc-create {
+    
+    background-color: #fff;
+    color: #69D3D6;
+    border: 1px solid #ced4da;
+    /* padding: 1%; */
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+    /* font-size: 4%; */
+    margin-bottom: 5%;
+}
