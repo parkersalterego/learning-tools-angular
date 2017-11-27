@@ -1,18 +1,18 @@
 
 body {
     background-color: #69D3D6;    
-    font-family: 'Brandon Grotesque', sans-serif;
 }
 
 /***Login Img***/
 .login-img {
     /* position: absolute; */
-    padding-top: 9%;
-    max-width: 32%;
-    max-height: 32%;
+    padding: 5px;
+    max-width: 20%;
+    max-height: 20%;
     height: auto;
     display: block;
     margin: 0 auto;
+    font-family: 'Brandon Grotesque';
 
 }
 /***End of login img***/
@@ -20,30 +20,27 @@ body {
 
 /***Inside form-input***/
 .form-input {
-    max-width: 330px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .input-form {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 3%;
-    font-family: 
-    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-family: 'Brandon Grotesque';
 }
 
-.login-btn {
-    margin: 2% auto;
-    color: #69D3D6;
+.checkbox {
+    font-family: 'Brandon Grotesque';
 }
 
-
-.create-acc {
-    margin: 0 auto;
-    color: white;
-    text-decoration: none !important;
-    padding-top: 3%;
+.btn {
+    margin: 5px auto;
+    background-color: white ;
+    font-family: 'Brandon Grotesque';
+    max-height: 20%;
+    height: auto;
+    padding: 5px;
 }
 /***End of form-input***/
-
-
