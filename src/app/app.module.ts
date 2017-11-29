@@ -11,6 +11,11 @@ import { StudentWorkComponent } from './components/student-work/student-work.com
 //import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { DirectiveComponent } from './-directive/-directive.component';
+import { GuardsComponent } from './-guards/-guards.component';
+import { HelpersComponent } from './-helpers/-helpers.component';
+import { ModelsComponent } from './-models/-models.component';
+import { ServicesComponent } from './-services/-services.component';
 
 const appRoutes: Routes = [
   {path:'new-account', component:NewAccountComponent},
@@ -33,7 +38,12 @@ const appRoutes: Routes = [
     ParentDashComponent,
     StudentWorkComponent,
     //NavbarComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    DirectiveComponent,
+    GuardsComponent,
+    HelpersComponent,
+    ModelsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
