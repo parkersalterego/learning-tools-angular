@@ -5,6 +5,10 @@ body {
     letter-spacing: 1px;
 }
 
+.vh-login {
+    width: 100vh;
+}
+
 /***Login Img***/
 .login-img {
     padding-top: 9%;

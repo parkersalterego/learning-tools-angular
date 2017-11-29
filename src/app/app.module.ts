@@ -8,9 +8,10 @@ import { TeacherDashComponent } from './components/teacher-dash/teacher-dash.com
 import { StudentDashComponent } from './components/student-dash/student-dash.component';
 import { ParentDashComponent } from './components/parent-dash/parent-dash.component';
 import { StudentWorkComponent } from './components/student-work/student-work.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+// import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { DirectiveComponent } from './-directive/-directive.component';
 
 const appRoutes: Routes = [
   {path:'new-account', component:NewAccountComponent},
@@ -19,7 +20,7 @@ const appRoutes: Routes = [
   {path:'student-dash', component:StudentDashComponent},
   {path:'parent-dash', component:ParentDashComponent},
   {path:'student-work', component:StudentWorkComponent},
-  {path:'navbar', component:NavbarComponent},{path:'user-details/:id', component:UserDetailsComponent}  
+  // {path:'navbar', component:NavbarComponent},{path:'user-details/:id', component:UserDetailsComponent}  
 ];
 
 @NgModule({
@@ -31,8 +32,9 @@ const appRoutes: Routes = [
     StudentDashComponent,
     ParentDashComponent,
     StudentWorkComponent,
-    NavbarComponent,
-    UserDetailsComponent
+    // NavbarComponent,
+    UserDetailsComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,
