@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { NewAccountComponent } from './components/new-account/new-account.component';
 import { TeacherDashComponent } from './components/teacher-dash/teacher-dash.component';
@@ -10,18 +11,25 @@ import { ParentDashComponent } from './components/parent-dash/parent-dash.compon
 import { StudentWorkComponent } from './components/student-work/student-work.component';
 //import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
-import { UserDetailsComponent } from './components/user-details/user-details.component';
+//import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ValidateService } from './services/validate.service';
+import { AuthService } from './services/auth.service';
+import { FlashMessageModule } from 'angular-flash-message';
+import { AuthGuard } from './guards/auth.guard';
+
 
 const appRoutes: Routes = [
+  {path:'',  redirectTo: 'login', pathMatch: 'full'},
   {path:'new-account', component:NewAccountComponent},
   {path:'login', component:LoginComponent},
-  {path:'teacher-dash', component:TeacherDashComponent},
-  {path:'student-dash', component:StudentDashComponent},
+  {path:'teacher-dash', component:TeacherDashComponent, canActivate:[AuthGuard]},
+  {path:'student-dash', component:StudentDashComponent, canActivate:[AuthGuard]},
   {path:'parent-dash', component:ParentDashComponent},
-  {path:'student-work', component:StudentWorkComponent},
+  {path:'student-work', component:StudentWorkComponent, canActivate:[AuthGuard]}},
   //{path:'navbar', component:NavbarComponent},
-  {path:'user-details/:id', component:UserDetailsComponent}  
-];
+  //{path:'user-details/:id', component:UserDetailsComponent}  
+],
 
 @NgModule({
   declarations: [
@@ -31,15 +39,20 @@ const appRoutes: Routes = [
     TeacherDashComponent,
     StudentDashComponent,
     ParentDashComponent,
-    StudentWorkComponent,
+    StudentWorkComponent
     //NavbarComponent,
-    UserDetailsComponent
+    //UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    FormsModule,
+    HttpModule, 
+    //NgbModule, 
+    RouterModule.forRoot(appRoutes), 
+    FlashMessageModule,
   ],
-  providers: [],
+  providers: [ValidateService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+//Complete

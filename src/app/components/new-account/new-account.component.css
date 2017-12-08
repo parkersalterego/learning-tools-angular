@@ -19,8 +19,8 @@ body {
 
 
 /***Inside form-input***/
-.form-input {
-    max-width: 600px;
+.form-group {
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -32,15 +32,15 @@ body {
 }
 
 .checkbox {
+    margin-top: 5px;
     font-family: 'Brandon Grotesque';
 }
 
-.btn {
-    margin: 5px auto;
-    background-color: white ;
-    font-family: 'Brandon Grotesque';
-    max-height: 20%;
-    height: auto;
+.btn-label {
     padding: 5px;
+    color: #69D3D6;
+    text-decoration: none !important;
+    font-family: 'Brandon Grotesque';
 }
+
 /***End of form-input***/

@@ -1,4 +1,5 @@
 import { each } from '../../../../AppData/Local/Microsoft/TypeScript/2.6/node_modules/@types/async';
+//same as Traversy's "app.js" file
 
 var express = require('express');
 var path = require('path');
