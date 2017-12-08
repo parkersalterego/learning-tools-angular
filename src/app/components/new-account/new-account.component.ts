@@ -29,7 +29,7 @@ export class NewAccountComponent implements OnInit {
       firstname: this.firstname,
       lastname: this.lastname,
       email: this.email,
-      username: this.createUsername;
+      username: this.createUsername,
       password: this.createPassword,
       userType: this.userType, 
     }

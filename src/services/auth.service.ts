@@ -18,7 +18,7 @@ export class AuthService {
     return this.http.post('http://localhost:3000/new-account', user,{headers: headers}).map(res => res.json());
   }
 
-//returns to backend authenatication
+//returns to backend authentication
   authenticateUser(user){
     let headers = new Headers ();
     headers.append('Content-Type', 'application/json');

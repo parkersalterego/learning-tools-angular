@@ -26,10 +26,10 @@ const appRoutes: Routes = [
   {path:'teacher-dash', component:TeacherDashComponent, canActivate:[AuthGuard]},
   {path:'student-dash', component:StudentDashComponent, canActivate:[AuthGuard]},
   {path:'parent-dash', component:ParentDashComponent},
-  {path:'student-work', component:StudentWorkComponent, canActivate:[AuthGuard]}},
+  {path:'student-work', component:StudentWorkComponent, canActivate:[AuthGuard]},
   //{path:'navbar', component:NavbarComponent},
   //{path:'user-details/:id', component:UserDetailsComponent}  
-],
+]
 
 @NgModule({
   declarations: [
